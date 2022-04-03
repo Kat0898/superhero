@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_grafh"
+    app:startDestination="@id/blankFragmentListaHero">
+
+    <fragment
+        android:id="@+id/blankFragmentListaHero"
+        android:name="cl.desafiolatam.prueba_superhero.ui.BlankFragmentListaHero"
+        android:label="fragment_blank_lista_hero"
+        tools:layout="@layout/fragment_blank_lista_hero" >
+        <action
+            android:id="@+id/action_blankFragmentListaHero_to_blankFragmentDetalle2"
+            app:destination="@id/blankFragmentDetalle2" />
+    </fragment>
+    <fragment
+        android:id="@+id/blankFragmentDetalle2"
+        android:name="cl.desafiolatam.prueba_superhero.ui.BlankFragmentDetalle"
+        android:label="fragment_blank_detalle"
+        tools:layout="@layout/fragment_blank_detalle" />
+</navigation>
